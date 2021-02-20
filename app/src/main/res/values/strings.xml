@@ -29,4 +29,5 @@
     <string name="whizzo">Whizzo</string>
     <string name="sign_in">Sign in</string>
     <string name="forgot_your_password">Forgot your password?</string>
+    <string name="recent_activity">Recent Activity</string>
 </resources>
