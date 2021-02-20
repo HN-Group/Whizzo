@@ -9,9 +9,8 @@
         tools:context=".ui.chat.ChatContextFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-            android:paddingHorizontal="100dp"
             android:id="@+id/textField"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:gravity="center"
@@ -21,18 +20,34 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginLeft="8dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            style = "@style/CardTheme">
+            android:topLeftRadius="24dp"
+            android:topRightRadius="24dp"
+            android:bottomRightRadius="24dp"
+            android:bottomLeftRadius="24dp"
+            style="@style/OutlinedRoundedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:topLeftRadius="24dp"
+                android:topRightRadius="24dp"
+                android:bottomRightRadius="24dp"
+                android:bottomLeftRadius="24dp"/>
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/chatrecyler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textField"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/newchat"
             android:layout_width="wrap_content"

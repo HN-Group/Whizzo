@@ -32,7 +32,6 @@ class RecyclerViewAdapter(var myCards: ArrayList<ChatCard>) :
         val lastMessage: TextView = itemView.findViewById<View>(R.id.lastMessage) as TextView
         val messageTime: TextView = itemView.findViewById<View>(R.id.messageTime) as TextView
         val unreadCount: TextView = itemView.findViewById<View>(R.id.unreadCount) as TextView
-
     }
 
 }
