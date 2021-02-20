@@ -13,13 +13,13 @@ import java.util.ArrayList
 class PostScreen(var myCards: ArrayList<CourseCard>) :
         RecyclerView.Adapter<PostScreen.MyViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val listItem: View = LayoutInflater.from(parent.context).inflate(R.layout.CourseCard, parent, false)
+        val listItem: View = LayoutInflater.from(parent.context).inflate(R.layout.course_card, parent, false)
         return MyViewHolder(listItem)
         }
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.title.text = myCards[position].CourseCard
-        holder.description.text = myCards[position].CourseCard
+        holder.title.text = myCards[position].title
+        holder.description.text = myCards[position].description
         }
 
         override fun getItemCount(): Int {
@@ -28,8 +28,7 @@ class PostScreen(var myCards: ArrayList<CourseCard>) :
 
 class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById<View>(R.id.title) as TextView
-        val description: TextView = itemView.findViewById<View>(R.id.description) as TextView
+        val description: TextView = itemView.findViewById<View>(R.id.desciption) as TextView
+}
 
-        }
-
-        }
+}

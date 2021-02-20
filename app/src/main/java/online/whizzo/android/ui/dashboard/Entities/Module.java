@@ -6,7 +6,7 @@ import java.util.List;
 public class Module {
 
     private String name;
-    private List<CourseCard> modulePosts = new ArrayList<>();
+    private ArrayList<CourseCard> modulePosts = new ArrayList<>();
 
     public Module(String name){
         this.name  = name;
@@ -16,7 +16,7 @@ public class Module {
         modulePosts.add(post);
     }
 
-    public List<CourseCard> getPosts(){
+    public ArrayList<CourseCard> getPosts(){
         return modulePosts;
     }
 }

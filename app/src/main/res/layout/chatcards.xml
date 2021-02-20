@@ -12,14 +12,6 @@ style = "@style/CardTheme"
             android:layout_height="match_parent"
             android:orientation="horizontal">
         <!-- Content (Icons and stuff) -->
-        <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_margin="8dp"
-                android:layout_gravity="center"
-                android:background="@drawable/circular_img"
-                android:scaleType="centerCrop">
-        </ImageView>
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

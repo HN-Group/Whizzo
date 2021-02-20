@@ -9,12 +9,16 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import online.whizzo.android.R;
 import online.whizzo.android.ui.dashboard.Entities.CourseCard;
+import online.whizzo.android.ui.dashboard.Entities.Module;
 
 public class DashboardFragment extends Fragment {
 
@@ -26,7 +30,7 @@ public class DashboardFragment extends Fragment {
     Button cs2310btn;
     Button cs2010btn;
     Button cs2130btn;
-    Button cs2410btn
+    Button cs2410btn;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -48,11 +52,21 @@ public class DashboardFragment extends Fragment {
         cs2020btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DashboardFragment.this, PostScreen.class));
+                //startActivity(new Intent(DashboardFragment.this, PostScreen(new ArrayList<>())));
+                //Module module = new Module((String) cs2020btn.getText());
+                ArrayList<CourseCard> sample = new ArrayList<>();
+                sample.add(new CourseCard("Title", "Description"));
+                Fragment fragment = new Fragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction transaction = fm.beginTransaction();
+                transaction.replace(R.id.course_card, fragment);
+                transaction.commit();
             }
-        });
+        }
+        );
     }
 }
+
 
 
 //  final TextView textView = root.findViewById(R.id.text_dashboard);

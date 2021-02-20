@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <!-- Media -->
@@ -23,16 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/title"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textSize="24sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/secondary_text"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -41,7 +32,7 @@
                 android:text="@string/supporting_text"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
         </LinearLayout>
     </LinearLayout>
