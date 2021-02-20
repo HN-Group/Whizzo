@@ -1,4 +1,4 @@
-package online.whizzo.android.ui.notifications;
+package online.whizzo.android.ui.chat;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,15 +12,15 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import online.whizzo.android.R;
 
-public class NotificationsFragment extends Fragment {
+public class ChatContextFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private ChatContextViewModel notificationsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+                ViewModelProviders.of(this).get(ChatContextViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_chatcontext, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
