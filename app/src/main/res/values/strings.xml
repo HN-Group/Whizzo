@@ -30,4 +30,6 @@
     <string name="sign_in">Sign in</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="recent_activity">Recent Activity</string>
+    <string name="top_posts">Top Posts</string>
+    <string name="your_subscribed_threads">Your Subscribed Threads</string>
 </resources>
