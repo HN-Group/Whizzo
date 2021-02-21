@@ -19,19 +19,9 @@
         <item name="cornerSize">32dp</item>
     </style>
 
-    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="shapeAppearanceOverlay">
-            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
-        </item>
-    </style>
-
-    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
-        <item name="android:textColor">@color/textPrimary</item>
-        <item name="boxBackgroundMode">outline</item>
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">32dp</item>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
 </resources>
