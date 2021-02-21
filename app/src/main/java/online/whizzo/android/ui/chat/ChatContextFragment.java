@@ -43,8 +43,12 @@ public class ChatContextFragment extends Fragment {
         ChatCard testCard2 = new ChatCard("Nisath",1,"","18:00","Is it working");
         ChatCard testCard3 = new ChatCard("Naim Ahmed",10,"","17:40","I'm Having a fun time at this Hackathon bro");
         ChatCard testCard4 = new ChatCard("Nishika",1,"","17:30","Nice!");
+        ChatCard testCard5 = new ChatCard("Bob",1,"","17:30","Sweet!");
+        ChatCard testCard6 = new ChatCard("Mom",1,"","17:30","It's cold outside");
+
+
         ArrayList<ChatCard> toReturn = new ArrayList<>();
-        toReturn.add(testCard1);toReturn.add(testCard2);toReturn.add(testCard3);toReturn.add(testCard4);
+        toReturn.add(testCard1);toReturn.add(testCard2);toReturn.add(testCard3);toReturn.add(testCard4);toReturn.add(testCard5);toReturn.add(testCard6);
         return toReturn;
     }
 }

@@ -5,6 +5,7 @@
     <string name="title_chat">Chat</string>
     <string name="title_notifications">Notifications</string>
     <string name="create_a_new_chat">Create a New Chat</string>
+    <string name="chat_message_hint">Chat Message</string>
     <string name="cs2230">CS2230</string>
     <string name="cs2020">CS2020</string>
     <string name="cs2310">CS2310</string>
